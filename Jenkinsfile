@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        dockerContainer {
-            image 'maven:3.9.3-eclipse-temurin-11' 
-        }
-    }
+    agent any
     stages {
         stage('Build') { 
             steps {
